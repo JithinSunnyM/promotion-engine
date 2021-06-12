@@ -26,9 +26,9 @@ namespace source
             int checkoutsD = 0;
             int unitPriceD = 15;
 
-            foreach(UnitPrice unitPrice in unitItems)
+            foreach (UnitPrice unitPrice in unitItems)
             {
-                if(unitPrice.skuId == "A" || unitPrice.skuId == "a")
+                if (unitPrice.skuId == "A" || unitPrice.skuId == "a")
                 {
                     checkoutsA = checkoutsA + 1;
                 }
@@ -46,14 +46,15 @@ namespace source
                 }
             }
 
-            // Applying the 2 promotion types
+            // Applying the 2 active promotions
             int totalUnitPriceA = (checkoutsA / 3) * 130 + (checkoutsA % 3 * unitPriceA);
             int totalUnitPriceB = (checkoutsB / 2) * 45 + (checkoutsB % 2 * unitPriceB);
 
             int totalUnitPriceC = (checkoutsC * unitPriceC);
             int totalUnitPriceD = (checkoutsD * unitPriceD);
 
-            return 0;
+            // Total
+            return totalUnitPriceA + totalUnitPriceB + totalUnitPriceC + totalUnitPriceD;
         }
 
         // Unit price for SKU IDs 
@@ -67,7 +68,7 @@ namespace source
                 this.skuId = id;
                 switch (id)
                 {
-                    case "A": 
+                    case "A":
                         this.price = 50;
                         break;
                     case "B":
