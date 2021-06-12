@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace source
 {
@@ -7,6 +8,26 @@ namespace source
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+        }
+
+
+        // To get total order value
+        private static int GetTotalOrderValue(List<UnitPrice> unitItems)
+        {
+            int checkoutsA = 0;
+            int unitPriceA = 50;
+
+            int checkoutsB = 0;
+            int unitPriceB = 30;
+
+            int checkoutsC = 0;
+            int unitPriceC = 20;
+
+            int checkoutsD = 0;
+            int unitPriceD = 15;
+
+
+            return 0;
         }
 
         // Unit price for SKU IDs 
