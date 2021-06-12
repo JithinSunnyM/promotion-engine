@@ -12,7 +12,7 @@ namespace source
             Console.WriteLine("Total number of promotions:");
             int n = Convert.ToInt32(Console.ReadLine());
 
-            for(int i = 0; i < n; i++)
+            for (int i = 0; i < n; i++)
             {
                 Console.WriteLine("Enter single character SKU ids (A, B, C, D)");
                 string singleCharacterId = Console.ReadLine();
@@ -20,8 +20,11 @@ namespace source
                 unitPriceItems.Add(unitPrice);
             }
 
+            // To get total checkout
+            int totalCheckout = GetTotalOrderValue(unitPriceItems);
+            Console.WriteLine(totalCheckout);
+            Console.ReadLine();
         }
-
 
         // To get total order value
         private static int GetTotalOrderValue(List<UnitPrice> unitItems)
@@ -95,6 +98,5 @@ namespace source
                 }
             }
         }
-
     }
 }
