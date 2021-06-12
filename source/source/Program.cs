@@ -26,6 +26,32 @@ namespace source
             int checkoutsD = 0;
             int unitPriceD = 15;
 
+            foreach(UnitPrice unitPrice in unitItems)
+            {
+                if(unitPrice.skuId == "A" || unitPrice.skuId == "a")
+                {
+                    checkoutsA = checkoutsA + 1;
+                }
+                if (unitPrice.skuId == "B" || unitPrice.skuId == "b")
+                {
+                    checkoutsB = checkoutsB + 1;
+                }
+                if (unitPrice.skuId == "C" || unitPrice.skuId == "c")
+                {
+                    checkoutsC = checkoutsC + 1;
+                }
+                if (unitPrice.skuId == "D" || unitPrice.skuId == "d")
+                {
+                    checkoutsD = checkoutsD + 1;
+                }
+            }
+
+            // Applying the 2 promotion types
+            int totalUnitPriceA = (checkoutsA / 3) * 130 + (checkoutsA % 3 * unitPriceA);
+            int totalUnitPriceB = (checkoutsB / 2) * 45 + (checkoutsB % 2 * unitPriceB);
+
+            int totalUnitPriceC = (checkoutsC * unitPriceC);
+            int totalUnitPriceD = (checkoutsD * unitPriceD);
 
             return 0;
         }
