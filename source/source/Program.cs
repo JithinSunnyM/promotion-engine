@@ -3,11 +3,23 @@ using System.Collections.Generic;
 
 namespace source
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            List<UnitPrice> unitPriceItems = new List<UnitPrice>();
+
+            Console.WriteLine("Total number of promotions:");
+            int n = Convert.ToInt32(Console.ReadLine());
+
+            for(int i = 0; i < n; i++)
+            {
+                Console.WriteLine("Enter single character SKU ids (A, B, C, D)");
+                string singleCharacterId = Console.ReadLine();
+                UnitPrice unitPrice = new UnitPrice(singleCharacterId);
+                unitPriceItems.Add(unitPrice);
+            }
+
         }
 
 

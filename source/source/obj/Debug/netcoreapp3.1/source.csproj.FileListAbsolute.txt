@@ -1,0 +1,13 @@
+D:\_GitHub\promotion-engine\source\source\bin\Debug\netcoreapp3.1\source.exe
+D:\_GitHub\promotion-engine\source\source\bin\Debug\netcoreapp3.1\source.deps.json
+D:\_GitHub\promotion-engine\source\source\bin\Debug\netcoreapp3.1\source.runtimeconfig.json
+D:\_GitHub\promotion-engine\source\source\bin\Debug\netcoreapp3.1\source.runtimeconfig.dev.json
+D:\_GitHub\promotion-engine\source\source\bin\Debug\netcoreapp3.1\source.dll
+D:\_GitHub\promotion-engine\source\source\bin\Debug\netcoreapp3.1\source.pdb
+D:\_GitHub\promotion-engine\source\source\obj\Debug\netcoreapp3.1\source.csprojAssemblyReference.cache
+D:\_GitHub\promotion-engine\source\source\obj\Debug\netcoreapp3.1\source.AssemblyInfoInputs.cache
+D:\_GitHub\promotion-engine\source\source\obj\Debug\netcoreapp3.1\source.AssemblyInfo.cs
+D:\_GitHub\promotion-engine\source\source\obj\Debug\netcoreapp3.1\source.csproj.CoreCompileInputs.cache
+D:\_GitHub\promotion-engine\source\source\obj\Debug\netcoreapp3.1\source.dll
+D:\_GitHub\promotion-engine\source\source\obj\Debug\netcoreapp3.1\source.pdb
+D:\_GitHub\promotion-engine\source\source\obj\Debug\netcoreapp3.1\source.genruntimeconfig.cache
